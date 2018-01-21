@@ -29,12 +29,12 @@ fundList = {
 }
 
 cookieData = {
-    'xq_a_token': 'e39d420f30c251f6778a2f394341cf89fa77b392',
-    'xq_a_token.sig': 'wCFLnsMbz-uU5s9grLNI9KSZ-QI',
-    'xq_r_token': '1adc1236349428753242dc24173b2451b265b3d4',
-    'xq_r_token.sig': 'lmBuAzU4LnsSe128lC4ergOK9Ug',
+    'xq_a_token': '',
+    'xq_a_token.sig': '',
+    'xq_r_token': '',
+    'xq_r_token.sig': '',
     'xq_is_login': '1',
-    'xq_is_login.sig': 'J3LxgPVPUzbBg3Kee_PquUfih7Q',
+    'xq_is_login.sig': '',
 }
 
 headerData = {
