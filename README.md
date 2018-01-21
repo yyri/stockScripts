@@ -1,4 +1,5 @@
 Python scripts for Stock and Funds in 蚂蚁财富 
+
 读取蚂蚁财富(Ant Fortune)的基金定投记录，并同步到随手记(sui.com)的转账记录和雪球(xueqiu.com/performance)的投资记录中。
 
 随手记是金蝶开发的一个家庭账本工具，到2018年本人使用这个工具已经有六年了。另外，也在使用雪球记录投资股票和基金的操作记录。
