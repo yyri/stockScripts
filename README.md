@@ -10,4 +10,5 @@ Python scripts for Stock and Funds in 蚂蚁财富
 XueqiuUtils.py：一些模拟post时用到的headers,cookie信息，理想状态是代码自己模拟登录并获取sessionId，后续再做。目前需要过一段时间自己更新一下，不过作为我自己基本每天都要登录的情况，这个sessionId是长期不变的，手工修改就可以了。
 
 AntFundSui.py：读取支付宝导出的记录，并写入到随手记中。
+
 AntFundXueqiu.py：读取支付宝导出的记录，并到新浪股票中查询当日基金净值，然后自行计算并填写投资记录。
