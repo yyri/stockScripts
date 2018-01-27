@@ -22,7 +22,7 @@ if __name__ == "__main__":
     print('Python3 is expected.\nCurrent Version is:' + sys.version)
     errorLines = 0
 
-    with open("C:/downloads/alipay_record_20180120_0750/alipay_record_20180120_0750_1.csv") as csv_file:
+    with open(XueqiuUtils.filename) as csv_file:
         rows = csv.reader(csv_file)
         count = 11
         for row in rows:
@@ -65,7 +65,7 @@ if __name__ == "__main__":
                 formData['data[symbol]'] = XueqiuUtils.fundList[fundName][0]
 
                 # trans cost
-                commission = int(sumMoney) * XueqiuUtils.fundList[fundName][1]
+                commission = floor(int(sumMoney) * XueqiuUtils.fundList[fundName][1]*100)/100
                 formData['data[commission]'] = commission
 
                 # fund price on trans date

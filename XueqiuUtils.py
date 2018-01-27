@@ -12,6 +12,20 @@ import json
 from urllib import parse, request
 from datetime import datetime
 
+
+sui_jsessionid = '9AA43A46A085C64B21E2C61696C64F43'
+sui_sessionCookie = '14ef1450ea7d6f4f82ef548c622dde6d'
+filename = "C:\downloads\\alipay_record_20180127_1922\\alipay_record_20180127_1922_1.csv"
+
+cookieData = {
+    'xq_a_token': 'e39d420f30c251f6778a2f394341cf89fa77b392',
+    'xq_a_token.sig': 'wCFLnsMbz-uU5s9grLNI9KSZ-QI',
+    'xq_is_login': '1',
+    'xq_is_login.sig': 'J3LxgPVPUzbBg3Kee_PquUfih7Q',
+    'xq_r_token': '1adc1236349428753242dc24173b2451b265b3d4',
+    'xq_r_token.sig': 'lmBuAzU4LnsSe128lC4ergOK9Ug',
+}
+
 fundList = {
     '华夏恒生ETF联接(QDII)': ['F000071', 0.0012],
     '景顺长城沪深300增强': ['F000311', 0.0012],
@@ -26,15 +40,6 @@ fundList = {
     '富国中证国有企业改革': ['F161026', 0.0015],
     '易方达纳斯达克100': ['F161130', 0.0015],
     '交银施罗德中证海外中国互联网指数(QDII': ['SZ164906', 0.0012],
-}
-
-cookieData = {
-    'xq_a_token': 'e39d420f30c251f6778a2f394341cf89fa77b392',
-    'xq_a_token.sig': 'wCFLnsMbz-uU5s9grLNI9KSZ-QI',
-    'xq_r_token': '1adc1236349428753242dc24173b2451b265b3d4',
-    'xq_r_token.sig': 'lmBuAzU4LnsSe128lC4ergOK9Ug',
-    'xq_is_login': '1',
-    'xq_is_login.sig': 'J3LxgPVPUzbBg3Kee_PquUfih7Q',
 }
 
 headerData = {
@@ -62,6 +67,9 @@ formData = {
     'data[taxRate]': '',
     'data[_]': '1516457868626',
 }
+
+
+
 
 def getprice(fundcode, transdate):
     xqPriceUrl = "http://fund.xueqiu.com/dj/open/fund/growth/FUNDCODE.json?day=7"

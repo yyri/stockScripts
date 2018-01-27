@@ -14,15 +14,13 @@ import sys
 from urllib import parse,request
 from datetime import datetime
 
+import XueqiuUtils
 
 print("Python3 is expected.Current Version is:" + sys.version)
 
-jsessionid = ''
-sessionCookie = ''
-filename = "C:/alipay_record_2135_1.csv"
 
 # https://consumeprod.alipay.com/record/standard.htm  高级筛选，搜索“蚂蚁财富”
-with open(filename) as csv_file:
+with open(XueqiuUtils.filename) as csv_file:
     rows = csv.reader(csv_file)
     count = 11
     for row in rows:
@@ -62,8 +60,8 @@ with open(filename) as csv_file:
             # postdata = params.encode('utf-8')
 
             cookies = {
-                'JSESSIONID': jsessionid,
-                'SESSION_COOKIE': sessionCookie,
+                'JSESSIONID': XueqiuUtils.sui_jsessionid,
+                'SESSION_COOKIE': XueqiuUtils.sui_sessionCookie,
             }
 
             headers = {
