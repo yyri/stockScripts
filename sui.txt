@@ -1,0 +1,570 @@
+curl "https://www.sui.com/tally/transfer.rmi" -H "Host: www.sui.com" -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0" -H "Accept: */*" -H "Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2" --compressed -H "Referer: https://www.sui.com/tally/new.do" -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8" -H "X-Requested-With: XMLHttpRequest" -H "Cookie: __vistor=DBFAC5281c1lhem71; Hm_lvt_3db4e52bb5797afe0faaa2fde5c96ea4=1515662855,1515726830,1515728528,1515813996; __nick=yyri"%"40163.com; _bookTabSwitchList=f8bb35fce3a08671b3ae2ed6c33e69c8|0|0&eaf0f8eee8ac43901d493221d4db8cd0|0|0&; __utma=121176714.950744407.1513591643.1516352533.1516414389.48; __utmz=121176714.1514086705.5.3.utmcsr=lc.ssjlicai.com|utmccn=(referral)|utmcmd=referral|utmcct=/index; JSESSIONID=165DBC45588B53E187CA761476AC7DAC; SESSION_COOKIE=14ef1450ea7d6f4f82ef548c622dde6d; __utmc=121176714; Hm_lpvt_3db4e52bb5797afe0faaa2fde5c96ea4=1516352533; __utmb=121176714.1.10.1516414389; __utmt=1" -H "Connection: keep-alive" --data "id=0&store=0&time=2018-01-20+10"%"3A13&project=0&member=0&memo="%"E5"%"8D"%"8E"%"E5"%"A4"%"8F"%"E6"%"81"%"92"%"E7"%"94"%"9FETF&url=&out_account=16760911192&in_account=32546913&debt_account=&account=0&price=300&price2="
+
+
+
+id=0
+store=0
+time=2018-01-20+10:13
+project=0
+member=0
+memo=华夏恒生ETF
+url
+out_account=16760911192
+in_account=32546913
+debt_account
+account=0
+price=3001
+price2
+
+
+
+POST /tally/transfer.rmi HTTP/1.1
+Host: www.sui.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate, br
+Referer: https://www.sui.com/tally/new.do
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+X-Requested-With: XMLHttpRequest
+Content-Length: 191
+Cookie: 
+__vistor=DBFAC5281c1lhem71;
+ Hm_lvt_3db4e52bb5797afe0faaa2fde5c96ea4=1515662855,1515726830,1515728528,1515813996;
+  __nick=yyri%40163.com;
+   _bookTabSwitchList=f8bb35fce3a08671b3ae2ed6c33e69c8|0|0&eaf0f8eee8ac43901d493221d4db8cd0|0|0&;
+    __utma=121176714.950744407.1513591643.1516352533.1516414389.48;
+     __utmz=121176714.1514086705.5.3.utmcsr=lc.ssjlicai.com|utmccn=(referral)|utmcmd=referral|utmcct=/index;
+      JSESSIONID=165DBC45588B53E187CA761476AC7DAC;
+       SESSION_COOKIE=14ef1450ea7d6f4f82ef548c622dde6d;
+        __utmc=121176714;
+         Hm_lpvt_3db4e52bb5797afe0faaa2fde5c96ea4=1516352533;
+          __utmb=121176714.1.10.1516414389;
+           __utmt=1
+Connection: keep-alive
+
+
+
+
+curl "https://www.sui.com/message/index.do" -H "Host: www.sui.com" -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0" -H "Accept: application/json, text/javascript, */*; q=0.01" -H "Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2" --compressed -H "Referer: https://www.sui.com/tally/new.do" -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8" -H "X-Requested-With: XMLHttpRequest" -H "Cookie: __vistor=DBFAC5281c1lhem71; Hm_lvt_3db4e52bb5797afe0faaa2fde5c96ea4=1515662855,1515726830,1515728528,1515813996; __nick=yyri"%"40163.com; _bookTabSwitchList=f8bb35fce3a08671b3ae2ed6c33e69c8|0|0&eaf0f8eee8ac43901d493221d4db8cd0|0|0&; __utma=121176714.950744407.1513591643.1516414389.1516416813.49; __utmz=121176714.1514086705.5.3.utmcsr=lc.ssjlicai.com|utmccn=(referral)|utmcmd=referral|utmcct=/index; JSESSIONID=E2E0B772A3BA80B6356A0E6F5792A2C3; SESSION_COOKIE=14ef1450ea7d6f4f82ef548c622dde6d; __utmc=121176714; Hm_lpvt_3db4e52bb5797afe0faaa2fde5c96ea4=1516352533" -H "Connection: keep-alive" --data "opt=new"
+
+POST /message/index.do HTTP/1.1
+Host: www.sui.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate, br
+Referer: https://www.sui.com/tally/new.do
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+X-Requested-With: XMLHttpRequest
+Content-Length: 7
+Cookie: 
+__vistor=DBFAC5281c1lhem71; 
+Hm_lvt_3db4e52bb5797afe0faaa2fde5c96ea4=1515662855,1515726830,1515728528,1515813996; 
+__nick=yyri%40163.com; 
+_bookTabSwitchList=f8bb35fce3a08671b3ae2ed6c33e69c8|0|0&eaf0f8eee8ac43901d493221d4db8cd0|0|0&; 
+__utma=121176714.950744407.1513591643.1516414389.1516416813.49; 
+__utmz=121176714.1514086705.5.3.utmcsr=lc.ssjlicai.com|utmccn=(referral)|utmcmd=referral|utmcct=/index; 
+JSESSIONID=E2E0B772A3BA80B6356A0E6F5792A2C3; 
+SESSION_COOKIE=14ef1450ea7d6f4f82ef548c622dde6d; 
+__utmc=121176714; 
+Hm_lpvt_3db4e52bb5797afe0faaa2fde5c96ea4=1516352533
+Connection: keep-alive
+
+
+
+
+
+curl "https://www.sui.com/tally/transfer.rmi" -H "Host: www.sui.com" -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0" -H "Accept: */*" -H "Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2" --compressed -H "Referer: https://www.sui.com/tally/new.do" -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8" -H "X-Requested-With: XMLHttpRequest" -H "Cookie: __vistor=DBFAC5281c1lhem71; Hm_lvt_3db4e52bb5797afe0faaa2fde5c96ea4=1515662855,1515726830,1515728528,1515813996; __nick=yyri"%"40163.com; _bookTabSwitchList=f8bb35fce3a08671b3ae2ed6c33e69c8|0|0&eaf0f8eee8ac43901d493221d4db8cd0|0|0&; __utma=121176714.950744407.1513591643.1516442529.1516445514.52; __utmz=121176714.1514086705.5.3.utmcsr=lc.ssjlicai.com|utmccn=(referral)|utmcmd=referral|utmcct=/index; JSESSIONID=6D61B78E15F71CCE264953D3A2680E07; SESSION_COOKIE=14ef1450ea7d6f4f82ef548c622dde6d; __utmc=121176714; Hm_lpvt_3db4e52bb5797afe0faaa2fde5c96ea4=1516352533; __utmb=121176714.1.10.1516445514; __utmt=1" -H "Connection: keep-alive" --data "id=0&store=0&time=2018-01-18+18"%"3A51&project=0&member=0&memo="%"E5"%"8D"%"9A"%"E6"%"97"%"B6"%"E4"%"B8"%"AD"%"E8"%"AF"%"81"%"E6"%"B7"%"98"%"E9"%"87"%"91"%"E5"%"A4"%"A7"%"E6"%"95"%"B0"%"E6"%"8D"%"AE&url=&out_account=16760911192&in_account=32546913&debt_account=&account=0&price=180&price2="
+
+POST /tally/transfer.rmi HTTP/1.1
+Host: www.sui.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate, br
+Referer: https://www.sui.com/tally/new.do
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+X-Requested-With: XMLHttpRequest
+Content-Length: 233
+Cookie: 
+__vistor=DBFAC5281c1lhem71; 
+Hm_lvt_3db4e52bb5797afe0faaa2fde5c96ea4=1515662855,1515726830,1515728528,1515813996;
+__nick=yyri%40163.com; 
+_bookTabSwitchList=f8bb35fce3a08671b3ae2ed6c33e69c8|0|0&eaf0f8eee8ac43901d493221d4db8cd0|0|0&; 
+__utma=121176714.950744407.1513591643.1516442529.1516445514.52; 
+__utmz=121176714.1514086705.5.3.utmcsr=lc.ssjlicai.com|utmccn=(referral)|utmcmd=referral|utmcct=/index; 
+JSESSIONID=6D61B78E15F71CCE264953D3A2680E07; 
+SESSION_COOKIE=14ef1450ea7d6f4f82ef548c622dde6d; 
+__utmc=121176714; 
+Hm_lpvt_3db4e52bb5797afe0faaa2fde5c96ea4=1516352533; 
+__utmb=121176714.1.10.1516445514;
+__utmt=1
+Connection: keep-alive
+
+
+
+
+
+curl "https://www.sui.com/tally/transfer.rmi" -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8"  -H "Cookie:    JSESSIONID=6D61B78E15F71CCE264953D3A2680E07; SESSION_COOKIE=14ef1450ea7d6f4f82ef548c622dde6d"  --data "id=0&store=0&time=2018-01-18+18"%"3A51&project=0&member=0&memo="%"E5"%"8D"%"9A"%"E6"%"97"%"B6"%"E4"%"B8"%"AD"%"E8"%"AF"%"81"%"E6"%"B7"%"98"%"E9"%"87"%"91"%"E5"%"A4"%"A7"%"E6"%"95"%"B0"%"E6"%"8D"%"AE&url=&out_account=16760911192&in_account=32546913&debt_account=&account=0&price=180&price2="
+
+curl "https://www.sui.com/tally/transfer.rmi" -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8"  -H "Cookie:    JSESSIONID=6D61B78E15F71CCE264953D3A2680E07; SESSION_COOKIE=14ef1450ea7d6f4f82ef548c622dde6d"  --data "id=0&store=0&project=0&member=0&out_account=16760911192&in_account=32546913&account=0&time=2018%2F1%2F17+10%3A45&memo=%E5%B7%A5%E9%93%B6%E7%91%9E%E4%BF%A1%E5%85%A8%E7%90%83%E7%B2%BE%E9%80%89%E8%82%A1%E7%A5%A8%28QDII%29&price=200"
+
+POST /tally/new.rmi HTTP/1.1
+Host: www.sui.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate, br
+Referer: https://www.sui.com/tally/new.do
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+X-Requested-With: XMLHttpRequest
+Content-Length: 120
+Cookie: __vistor=DBFAC5281c1lhem71; Hm_lvt_3db4e52bb5797afe0faaa2fde5c96ea4=1515662855,1515726830,1515728528,1515813996; __nick=yyri%40163.com; _bookTabSwitchList=f8bb35fce3a08671b3ae2ed6c33e69c8|0|0&eaf0f8eee8ac43901d493221d4db8cd0|0|0&; __utma=121176714.950744407.1513591643.1516449270.1516453150.54; __utmz=121176714.1514086705.5.3.utmcsr=lc.ssjlicai.com|utmccn=(referral)|utmcmd=referral|utmcct=/index; JSESSIONID=3770EAA80D813701D2B0463993A473BE; SESSION_COOKIE=14ef1450ea7d6f4f82ef548c622dde6d; __utmc=121176714; Hm_lpvt_3db4e52bb5797afe0faaa2fde5c96ea4=1516454242; __utmb=121176714.11.9.1516453971639; __utmt=1
+Connection: keep-alive
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GET /dj/open/fund/growth/110022.json?day=7 HTTP/1.1
+Host: fund.xueqiu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate, br
+Referer: https://xueqiu.com/S/F110022
+Origin: https://xueqiu.com
+Connection: keep-alive
+Cache-Control: max-age=0
+
+
+{"data":{"fund_nav_growth":[{"date":"2017-12-19","nav":"2.3140","percentage":"0.8718","value":"0","than_value":"0"},{"date":"2017-12-20","nav":"2.3440","percentage":"1.2965","value":"0.0130","than_value":"-0.0012"},{"date":"2017-12-21","nav":"2.3560","percentage":"0.5119","value":"0.0182","than_value":"0.0081"},{"date":"2017-12-22","nav":"2.3410","percentage":"-0.6367","value":"0.0117","than_value":"0.0048"},{"date":"2017-12-25","nav":"2.3490","percentage":"0.3417","value":"0.0151","than_value":"0.0015"},{"date":"2017-12-26","nav":"2.3260","percentage":"-0.9791","value":"0.0052","than_value":"0.0045"},{"date":"2017-12-27","nav":"2.2800","percentage":"-1.9776","value":"-0.0147","than_value":"-0.0109"},{"date":"2017-12-28","nav":"2.3340","percentage":"2.3684","value":"0.0086","than_value":"-0.0041"},{"date":"2017-12-29","nav":"2.3310","percentage":"-0.1285","value":"0.0073","than_value":"-0.0011"},{"date":"2017-12-31","nav":"2.3310","percentage":"0.00000000","value":"0.0073","than_value":"-0.0011"},{"date":"2018-01-02","nav":"2.3420","percentage":"0.4719","value":"0.0121","than_value":"0.0129"},{"date":"2018-01-03","nav":"2.3470","percentage":"0.21349300","value":"0.0143","than_value":"0.0189"},{"date":"2018-01-04","nav":"2.3850","percentage":"1.6191","value":"0.0307","than_value":"0.0231"},{"date":"2018-01-05","nav":"2.3900","percentage":"0.2096","value":"0.0328","than_value":"0.0256"},{"date":"2018-01-08","nav":"2.4110","percentage":"0.8787","value":"0.0419","than_value":"0.0309"},{"date":"2018-01-09","nav":"2.4700","percentage":"2.4471","value":"0.0674","than_value":"0.0381"},{"date":"2018-01-10","nav":"2.5050","percentage":"1.4170","value":"0.0825","than_value":"0.0427"},{"date":"2018-01-11","nav":"2.4850","percentage":"-0.79840300","value":"0.0739","than_value":"0.0422"},{"date":"2018-01-12","nav":"2.5270","percentage":"1.6901","value":"0.0920","than_value":"0.0470"},{"date":"2018-01-15","nav":"2.5360","percentage":"0.3562","value":"0.0959","than_value":"0.0471"},{"date":"2018-01-16","nav":"2.5400","percentage":"0.1577","value":"0.0977","than_value":"0.0554"},{"date":"2018-01-17","nav":"2.4840","percentage":"-2.2047","value":"0.0735","than_value":"0.0528"},{"date":"2018-01-18","nav":"2.4870","percentage":"0.1208","value":"0.0748","than_value":"0.0586"},{"date":"2018-01-19","nav":"2.4570","percentage":"-1.2063","value":"0.0618","than_value":"0.0621"}],"growth_lines":[{"line_name":"本产品","line_key":"value","line_color":"#ff6600"},{"line_name":"沪深300","line_key":"than_value","line_color":"#00c0ff"}]},"result_code":0}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GET /service/csrf?api=%2Fstock%2Fportfolio%2Faddtrans.json&_=1516457868627 HTTP/1.1
+Host: xueqiu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate, br
+Referer: https://xueqiu.com/performance
+cache-control: no-cache
+X-Requested-With: XMLHttpRequest
+Cookie: Hm_lvt_1db88642e346389874251b5a1eded6e3=1515726844,1515728401,1515728521,1516247628; device_id=0f130389a94383e2368d5d55e43adf3d; xq_a_token=e39d420f30c251f6778a2f394341cf89fa77b392; xq_a_token.sig=wCFLnsMbz-uU5s9grLNI9KSZ-QI; xq_r_token=1adc1236349428753242dc24173b2451b265b3d4; xq_r_token.sig=lmBuAzU4LnsSe128lC4ergOK9Ug; s=fd11clw10r; u=7309855904; remember=1; remember.sig=K4F3faYzmVuqC0iXIERCQf55g2Y; xq_is_login.sig=J3LxgPVPUzbBg3Kee_PquUfih7Q; u.sig=Xh0hW3oFsp-9FsZnngYrdcQFc8Y; isPast=true; isPast.sig=Q1zWad3glPfOy3Ye-506BMax-a0; bid=7d61d477a90d923192ee705a2d8777db_jbh841ja; __utma=1.1924959979.1513905273.1516352947.1516456344.63; __utmz=1.1513905273.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); xq_is_login=1; aliyungf_tc=AQAAABl+GUs9cQUA+j4oZRmL+daGdGmz; __utmc=1; Hm_lpvt_1db88642e346389874251b5a1eded6e3=1516352948; __utmb=1.5.10.1516456344
+Connection: keep-alive
+
+
+curl "https://xueqiu.com/service/csrf?api="%"2Fstock"%"2Fportfolio"%"2Faddtrans.json&_=1516457868627" -H "Host: xueqiu.com" -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0" -H "Accept: */*" -H "Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2" --compressed -H "Referer: https://xueqiu.com/performance" -H "cache-control: no-cache" -H "X-Requested-With: XMLHttpRequest" -H "Cookie: Hm_lvt_1db88642e346389874251b5a1eded6e3=1515726844,1515728401,1515728521,1516247628; device_id=0f130389a94383e2368d5d55e43adf3d; xq_a_token=e39d420f30c251f6778a2f394341cf89fa77b392; xq_a_token.sig=wCFLnsMbz-uU5s9grLNI9KSZ-QI; xq_r_token=1adc1236349428753242dc24173b2451b265b3d4; xq_r_token.sig=lmBuAzU4LnsSe128lC4ergOK9Ug; s=fd11clw10r; u=7309855904; remember=1; remember.sig=K4F3faYzmVuqC0iXIERCQf55g2Y; xq_is_login.sig=J3LxgPVPUzbBg3Kee_PquUfih7Q; u.sig=Xh0hW3oFsp-9FsZnngYrdcQFc8Y; isPast=true; isPast.sig=Q1zWad3glPfOy3Ye-506BMax-a0; bid=7d61d477a90d923192ee705a2d8777db_jbh841ja; __utma=1.1924959979.1513905273.1516352947.1516456344.63; __utmz=1.1513905273.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); xq_is_login=1; aliyungf_tc=AQAAABl+GUs9cQUA+j4oZRmL+daGdGmz; __utmc=1; Hm_lpvt_1db88642e346389874251b5a1eded6e3=1516352948; __utmb=1.5.10.1516456344" -H "Connection: keep-alive"
+
+
+
+HTTP/1.1 200 OK
+Date: Sat, 20 Jan 2018 14:17:49 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+Server: openresty/1.11.2.4
+X-Powered-By: Express
+Cache-Control: private, no-store, no-cache, must-revalidate, max-age=0
+X-RT: 4
+P3P: "CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT""
+Strict-Transport-Security: max-age=31536000
+
+
+{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GET /service/csrf?api=%2Fstock%2Fcommissiontax%2Fadd.json&_=1516457868631 HTTP/1.1
+Host: xueqiu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate, br
+Referer: https://xueqiu.com/performance
+cache-control: no-cache
+X-Requested-With: XMLHttpRequest
+Cookie: Hm_lvt_1db88642e346389874251b5a1eded6e3=1515726844,1515728401,1515728521,1516247628; device_id=0f130389a94383e2368d5d55e43adf3d; xq_a_token=e39d420f30c251f6778a2f394341cf89fa77b392; xq_a_token.sig=wCFLnsMbz-uU5s9grLNI9KSZ-QI; xq_r_token=1adc1236349428753242dc24173b2451b265b3d4; xq_r_token.sig=lmBuAzU4LnsSe128lC4ergOK9Ug; s=fd11clw10r; u=7309855904; remember=1; remember.sig=K4F3faYzmVuqC0iXIERCQf55g2Y; xq_is_login.sig=J3LxgPVPUzbBg3Kee_PquUfih7Q; u.sig=Xh0hW3oFsp-9FsZnngYrdcQFc8Y; isPast=true; isPast.sig=Q1zWad3glPfOy3Ye-506BMax-a0; bid=7d61d477a90d923192ee705a2d8777db_jbh841ja; __utma=1.1924959979.1513905273.1516352947.1516456344.63; __utmz=1.1513905273.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); xq_is_login=1; aliyungf_tc=AQAAABl+GUs9cQUA+j4oZRmL+daGdGmz; __utmc=1; Hm_lpvt_1db88642e346389874251b5a1eded6e3=1516352948; __utmb=1.5.10.1516456344
+Connection: keep-alive
+
+curl "https://xueqiu.com/service/csrf?api="%"2Fstock"%"2Fcommissiontax"%"2Fadd.json&_=1516457868631" -H "Host: xueqiu.com" -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0" -H "Accept: */*" -H "Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2" --compressed -H "Referer: https://xueqiu.com/performance" -H "cache-control: no-cache" -H "X-Requested-With: XMLHttpRequest" -H "Cookie: Hm_lvt_1db88642e346389874251b5a1eded6e3=1515726844,1515728401,1515728521,1516247628; device_id=0f130389a94383e2368d5d55e43adf3d; xq_a_token=e39d420f30c251f6778a2f394341cf89fa77b392; xq_a_token.sig=wCFLnsMbz-uU5s9grLNI9KSZ-QI; xq_r_token=1adc1236349428753242dc24173b2451b265b3d4; xq_r_token.sig=lmBuAzU4LnsSe128lC4ergOK9Ug; s=fd11clw10r; u=7309855904; remember=1; remember.sig=K4F3faYzmVuqC0iXIERCQf55g2Y; xq_is_login.sig=J3LxgPVPUzbBg3Kee_PquUfih7Q; u.sig=Xh0hW3oFsp-9FsZnngYrdcQFc8Y; isPast=true; isPast.sig=Q1zWad3glPfOy3Ye-506BMax-a0; bid=7d61d477a90d923192ee705a2d8777db_jbh841ja; __utma=1.1924959979.1513905273.1516352947.1516456344.63; __utmz=1.1513905273.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); xq_is_login=1; aliyungf_tc=AQAAABl+GUs9cQUA+j4oZRmL+daGdGmz; __utmc=1; Hm_lpvt_1db88642e346389874251b5a1eded6e3=1516352948; __utmb=1.5.10.1516456344" -H "Connection: keep-alive"
+
+
+HTTP/1.1 200 OK
+Date: Sat, 20 Jan 2018 14:17:49 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+Server: openresty/1.11.2.4
+X-Powered-By: Express
+Cache-Control: private, no-store, no-cache, must-revalidate, max-age=0
+X-RT: 6
+P3P: "CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT""
+Strict-Transport-Security: max-age=31536000
+
+{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+curl "https://xueqiu.com/service/poster" -H "Host: xueqiu.com" -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0" -H "Accept: */*" -H "Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2" --compressed -H "Referer: https://xueqiu.com/performance" -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8" -H "cache-control: no-cache" -H "X-Requested-With: XMLHttpRequest" -H "Cookie: Hm_lvt_1db88642e346389874251b5a1eded6e3=1515726844,1515728401,1515728521,1516247628; device_id=0f130389a94383e2368d5d55e43adf3d; xq_a_token=e39d420f30c251f6778a2f394341cf89fa77b392; xq_a_token.sig=wCFLnsMbz-uU5s9grLNI9KSZ-QI; xq_r_token=1adc1236349428753242dc24173b2451b265b3d4; xq_r_token.sig=lmBuAzU4LnsSe128lC4ergOK9Ug; s=fd11clw10r; u=7309855904; remember=1; remember.sig=K4F3faYzmVuqC0iXIERCQf55g2Y; xq_is_login.sig=J3LxgPVPUzbBg3Kee_PquUfih7Q; u.sig=Xh0hW3oFsp-9FsZnngYrdcQFc8Y; isPast=true; isPast.sig=Q1zWad3glPfOy3Ye-506BMax-a0; bid=7d61d477a90d923192ee705a2d8777db_jbh841ja; __utma=1.1924959979.1513905273.1516352947.1516456344.63; __utmz=1.1513905273.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); xq_is_login=1; aliyungf_tc=AQAAABl+GUs9cQUA+j4oZRmL+daGdGmz; __utmc=1; Hm_lpvt_1db88642e346389874251b5a1eded6e3=1516352948; __utmb=1.5.10.1516456344" -H "Connection: keep-alive" --data "url="%"2Fstock"%"2Fportfolio"%"2Faddtrans.json&data"%"5Btype"%"5D=1&data"%"5Bdate"%"5D=2018-01-20&data"%"5Bcomment"%"5D=&data"%"5Bsymbol"%"5D=F110022&data"%"5BgroupId"%"5D=3147879&data"%"5Bprice"%"5D=1.5&data"%"5Bshares"%"5D=100&data"%"5Bcommission"%"5D=0.4&data"%"5BtaxRate"%"5D=&data"%"5B_"%"5D=1516457868626"
+
+url=/stock/portfolio/addtrans.json
+data[type]=1
+data[date]=2018-01-20
+data[comment]
+data[symbol]=F110022
+data[groupId]=3147879
+data[price]=1.5
+data[shares]=100
+data[commission]=0.4
+data[taxRate]
+data[_]=1516457868626
+
+
+POST /service/poster HTTP/1.1
+Host: xueqiu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate, br
+Referer: https://xueqiu.com/performance
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+cache-control: no-cache
+X-Requested-With: XMLHttpRequest
+Content-Length: 264
+Cookie: Hm_lvt_1db88642e346389874251b5a1eded6e3=1515726844,1515728401,1515728521,1516247628; device_id=0f130389a94383e2368d5d55e43adf3d; xq_a_token=e39d420f30c251f6778a2f394341cf89fa77b392; xq_a_token.sig=wCFLnsMbz-uU5s9grLNI9KSZ-QI; xq_r_token=1adc1236349428753242dc24173b2451b265b3d4; xq_r_token.sig=lmBuAzU4LnsSe128lC4ergOK9Ug; s=fd11clw10r; u=7309855904; remember=1; remember.sig=K4F3faYzmVuqC0iXIERCQf55g2Y; xq_is_login.sig=J3LxgPVPUzbBg3Kee_PquUfih7Q; u.sig=Xh0hW3oFsp-9FsZnngYrdcQFc8Y; isPast=true; isPast.sig=Q1zWad3glPfOy3Ye-506BMax-a0; bid=7d61d477a90d923192ee705a2d8777db_jbh841ja; __utma=1.1924959979.1513905273.1516352947.1516456344.63; __utmz=1.1513905273.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); xq_is_login=1; aliyungf_tc=AQAAABl+GUs9cQUA+j4oZRmL+daGdGmz; __utmc=1; Hm_lpvt_1db88642e346389874251b5a1eded6e3=1516352948; __utmb=1.5.10.1516456344
+Connection: keep-alive
+
+
+HTTP/1.1 200 OK
+Date: Sat, 20 Jan 2018 14:17:49 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 16
+Connection: keep-alive
+Server: openresty/1.11.2.4
+X-Powered-By: Express
+Cache-Control: private, no-store, no-cache, must-revalidate, max-age=0
+trace-id: c5334d98f63c2fa5
+X-RT: 29
+P3P: "CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT""
+Strict-Transport-Security: max-age=31536000
+
+
+
+{"success":true}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+curl "https://xueqiu.com/service/poster" -H "Host: xueqiu.com" -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0" -H "Accept: */*" -H "Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2" --compressed -H "Referer: https://xueqiu.com/performance" -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8" -H "cache-control: no-cache" -H "X-Requested-With: XMLHttpRequest" -H "Cookie: Hm_lvt_1db88642e346389874251b5a1eded6e3=1515726844,1515728401,1515728521,1516247628; device_id=0f130389a94383e2368d5d55e43adf3d; xq_a_token=e39d420f30c251f6778a2f394341cf89fa77b392; xq_a_token.sig=wCFLnsMbz-uU5s9grLNI9KSZ-QI; xq_r_token=1adc1236349428753242dc24173b2451b265b3d4; xq_r_token.sig=lmBuAzU4LnsSe128lC4ergOK9Ug; s=fd11clw10r; u=7309855904; remember=1; remember.sig=K4F3faYzmVuqC0iXIERCQf55g2Y; xq_is_login.sig=J3LxgPVPUzbBg3Kee_PquUfih7Q; u.sig=Xh0hW3oFsp-9FsZnngYrdcQFc8Y; isPast=true; isPast.sig=Q1zWad3glPfOy3Ye-506BMax-a0; bid=7d61d477a90d923192ee705a2d8777db_jbh841ja; __utma=1.1924959979.1513905273.1516352947.1516456344.63; __utmz=1.1513905273.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); xq_is_login=1; aliyungf_tc=AQAAABl+GUs9cQUA+j4oZRmL+daGdGmz; __utmc=1; Hm_lpvt_1db88642e346389874251b5a1eded6e3=1516352948; __utmb=1.5.10.1516456344" -H "Connection: keep-alive" --data "url="%"2Fstock"%"2Fcommissiontax"%"2Fadd.json&data"%"5Bop_type"%"5D=1&data"%"5Bcommission"%"5D=0.4&data"%"5Btax_rate"%"5D=0&data"%"5B_"%"5D=1516457868631"
+
+
+url=/stock/commissiontax/add.json
+data[op_type]=1
+data[commission]=0.4
+data[tax_rate]=0
+data[_]=1516457868631
+
+
+POST /service/poster HTTP/1.1
+Host: xueqiu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate, br
+Referer: https://xueqiu.com/performance
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+cache-control: no-cache
+X-Requested-With: XMLHttpRequest
+Content-Length: 131
+Cookie: Hm_lvt_1db88642e346389874251b5a1eded6e3=1515726844,1515728401,1515728521,1516247628; device_id=0f130389a94383e2368d5d55e43adf3d; xq_a_token=e39d420f30c251f6778a2f394341cf89fa77b392; xq_a_token.sig=wCFLnsMbz-uU5s9grLNI9KSZ-QI; xq_r_token=1adc1236349428753242dc24173b2451b265b3d4; xq_r_token.sig=lmBuAzU4LnsSe128lC4ergOK9Ug; s=fd11clw10r; u=7309855904; remember=1; remember.sig=K4F3faYzmVuqC0iXIERCQf55g2Y; xq_is_login.sig=J3LxgPVPUzbBg3Kee_PquUfih7Q; u.sig=Xh0hW3oFsp-9FsZnngYrdcQFc8Y; isPast=true; isPast.sig=Q1zWad3glPfOy3Ye-506BMax-a0; bid=7d61d477a90d923192ee705a2d8777db_jbh841ja; __utma=1.1924959979.1513905273.1516352947.1516456344.63; __utmz=1.1513905273.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); xq_is_login=1; aliyungf_tc=AQAAABl+GUs9cQUA+j4oZRmL+daGdGmz; __utmc=1; Hm_lpvt_1db88642e346389874251b5a1eded6e3=1516352948; __utmb=1.5.10.1516456344
+Connection: keep-alive
+
+
+HTTP/1.1 200 OK
+Date: Sat, 20 Jan 2018 14:17:49 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 0
+Connection: keep-alive
+Server: openresty/1.11.2.4
+X-Powered-By: Express
+Cache-Control: private, no-store, no-cache, must-revalidate, max-age=0
+trace-id: 0618f50c03833abe
+X-RT: 6
+P3P: "CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT""
+Strict-Transport-Security: max-age=31536000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+curl "https://xueqiu.com/service/poster" -H "Host: xueqiu.com" -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0" -H "Accept: */*" -H "Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2" --compressed -H "Referer: https://xueqiu.com/performance" -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8" -H "cache-control: no-cache" -H "X-Requested-With: XMLHttpRequest" -H "Cookie:   xq_a_token=e39d420f30c251f6778a2f394341cf89fa77b392; xq_a_token.sig=wCFLnsMbz-uU5s9grLNI9KSZ-QI; xq_r_token=1adc1236349428753242dc24173b2451b265b3d4; xq_r_token.sig=lmBuAzU4LnsSe128lC4ergOK9Ug;  xq_is_login.sig=J3LxgPVPUzbBg3Kee_PquUfih7Q; xq_is_login=1;  " -H "Connection: keep-alive" --data "url="%"2Fstock"%"2Fportfolio"%"2Faddtrans.json&data"%"5Btype"%"5D=1&data"%"5Bdate"%"5D=2018-01-20&data"%"5Bcomment"%"5D=&data"%"5Bsymbol"%"5D=F110022&data"%"5BgroupId"%"5D=3147879&data"%"5Bprice"%"5D=1.5&data"%"5Bshares"%"5D=100&data"%"5Bcommission"%"5D=0.4&data"%"5BtaxRate"%"5D=&data"%"5B_"%"5D=1516457868626"
+
+
+
+url=/stock/portfolio/addtrans.json
+data[type]=1
+data[date]=2018-01-20
+data[comment]
+data[symbol]=F110022
+data[groupId]=3147879
+data[price]=1.5
+data[shares]=100
+data[commission]=0.4
+data[taxRate]
+data[_]=1516457868626
+
+
+
+
+
+
+
+
+
+
+
+
+
+url=/stock/portfolio/addtrans.json
+data[type]=1
+data[date]=2018-01-20
+data[comment]
+data[symbol]=SZ164906
+data[groupId]=3147879
+data[price]=1.2051
+data[shares]=1
+data[commission]
+data[taxRate]
+data[_]=1516492040586
+
+
+curl "https://xueqiu.com/service/poster" -H "Host: xueqiu.com" -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0" -H "Accept: */*" -H "Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2" --compressed -H "Referer: https://xueqiu.com/performance" -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8" -H "cache-control: no-cache" -H "X-Requested-With: XMLHttpRequest" -H "Cookie: Hm_lvt_1db88642e346389874251b5a1eded6e3=1515726844,1515728401,1515728521,1516247628; device_id=0f130389a94383e2368d5d55e43adf3d; xq_a_token=e39d420f30c251f6778a2f394341cf89fa77b392; xq_a_token.sig=wCFLnsMbz-uU5s9grLNI9KSZ-QI; xq_r_token=1adc1236349428753242dc24173b2451b265b3d4; xq_r_token.sig=lmBuAzU4LnsSe128lC4ergOK9Ug; s=fd11clw10r; u=7309855904; remember=1; remember.sig=K4F3faYzmVuqC0iXIERCQf55g2Y; xq_is_login.sig=J3LxgPVPUzbBg3Kee_PquUfih7Q; u.sig=Xh0hW3oFsp-9FsZnngYrdcQFc8Y; isPast=true; isPast.sig=Q1zWad3glPfOy3Ye-506BMax-a0; bid=7d61d477a90d923192ee705a2d8777db_jbh841ja; __utma=1.1924959979.1513905273.1516456344.1516491104.64; __utmz=1.1513905273.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); xq_is_login=1; __utmb=1.3.10.1516491104; aliyungf_tc=AQAAABl+GUs9cQUA+j4oZRmL+daGdGmz; Hm_lpvt_1db88642e346389874251b5a1eded6e3=1516491301; __utmc=1" -H "Connection: keep-alive" --data "url="%"2Fstock"%"2Fportfolio"%"2Faddtrans.json&data"%"5Btype"%"5D=1&data"%"5Bdate"%"5D=2018-01-20&data"%"5Bcomment"%"5D=&data"%"5Bsymbol"%"5D=SZ164906&data"%"5BgroupId"%"5D=3147879&data"%"5Bprice"%"5D=1.2051&data"%"5Bshares"%"5D=1&data"%"5Bcommission"%"5D=&data"%"5BtaxRate"%"5D=&data"%"5B_"%"5D=1516492040586"
+
+POST /service/poster HTTP/1.1
+Host: xueqiu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate, br
+Referer: https://xueqiu.com/performance
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+cache-control: no-cache
+X-Requested-With: XMLHttpRequest
+Content-Length: 263
+Cookie: Hm_lvt_1db88642e346389874251b5a1eded6e3=1515726844,1515728401,1515728521,1516247628; device_id=0f130389a94383e2368d5d55e43adf3d; xq_a_token=e39d420f30c251f6778a2f394341cf89fa77b392; xq_a_token.sig=wCFLnsMbz-uU5s9grLNI9KSZ-QI; xq_r_token=1adc1236349428753242dc24173b2451b265b3d4; xq_r_token.sig=lmBuAzU4LnsSe128lC4ergOK9Ug; s=fd11clw10r; u=7309855904; remember=1; remember.sig=K4F3faYzmVuqC0iXIERCQf55g2Y; xq_is_login.sig=J3LxgPVPUzbBg3Kee_PquUfih7Q; u.sig=Xh0hW3oFsp-9FsZnngYrdcQFc8Y; isPast=true; isPast.sig=Q1zWad3glPfOy3Ye-506BMax-a0; bid=7d61d477a90d923192ee705a2d8777db_jbh841ja; __utma=1.1924959979.1513905273.1516456344.1516491104.64; __utmz=1.1513905273.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); xq_is_login=1; __utmb=1.3.10.1516491104; aliyungf_tc=AQAAABl+GUs9cQUA+j4oZRmL+daGdGmz; Hm_lpvt_1db88642e346389874251b5a1eded6e3=1516491301; __utmc=1
+Connection: keep-alive
+
+HTTP/1.1 200 OK
+Date: Sat, 20 Jan 2018 23:47:23 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 16
+Connection: keep-alive
+Server: openresty/1.11.2.4
+X-Powered-By: Express
+Cache-Control: private, no-store, no-cache, must-revalidate, max-age=0
+trace-id: ac572ec15b70f03d
+X-RT: 31
+P3P: "CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT""
+Strict-Transport-Security: max-age=31536000
+
+{"success":true}
+
+
+
+
+
+
+
+
+http://fund.xueqiu.com/dj/open/fund/growth/110022.json?day=7
+
+{
+    "data": {
+        "fund_nav_growth": [
+            {
+                "date": "2018-01-12",
+                "nav": "2.5270",
+                "percentage": "1.6901",
+                "value": "0",
+                "than_value": "0"
+            },
+            {
+                "date": "2018-01-15",
+                "nav": "2.5360",
+                "percentage": "0.3562",
+                "value": "0.0036",
+                "than_value": "0.0001"
+            },
+            {
+                "date": "2018-01-16",
+                "nav": "2.5400",
+                "percentage": "0.1577",
+                "value": "0.0051",
+                "than_value": "0.0080"
+            },
+            {
+                "date": "2018-01-17",
+                "nav": "2.4840",
+                "percentage": "-2.2047",
+                "value": "-0.0170",
+                "than_value": "0.0056"
+            },
+            {
+                "date": "2018-01-18",
+                "nav": "2.4870",
+                "percentage": "0.1208",
+                "value": "-0.0158",
+                "than_value": "0.0111"
+            },
+            {
+                "date": "2018-01-19",
+                "nav": "2.4570",
+                "percentage": "-1.2063",
+                "value": "-0.0277",
+                "than_value": "0.0144"
+            }
+        ],
+        "growth_lines": [
+            {
+                "line_name": "本产品",
+                "line_key": "value",
+                "line_color": "#ff6600"
+            },
+            {
+                "line_name": "沪深300",
+                "line_key": "than_value",
+                "line_color": "#00c0ff"
+            }
+        ]
+    },
+    "result_code": 0
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    curl "http://stock.finance.sina.com.cn/fundInfo/api/openapi.php/CaihuiFundInfoService.getNav?callback=jQuery111209628805851685189_1516499229227&symbol=110022&datefrom=2018-01-01&dateto=2018-01-15&page=1&_=1516499229247" -H "Host: stock.finance.sina.com.cn" -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0" -H "Accept: */*" -H "Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2" --compressed -H "Referer: http://finance.sina.com.cn/fund/quotes/110022/bc.shtml" -H "Cookie: SINAGLOBAL=58.135.84.66_1507522067.304496; UOR=www.baidu.com,tech.sina.com.cn,; ULV=1516089901709:5:2:2:124.65.167.170_1516089897.50860:1516089895053; SGUID=1511484238993_419938; U_TRS1=00000069.3a3f32cd.5a176b53.73539e04; lxlrttp=1516344969; vjuids=-36cb39e17.1607bc9704e.0.ea351ef99c34e; vjlast=1513905287; FIN_ALL_VISITED=sh601398"%"2C00755; SCF=Ajn03tGwFARNcXYE9AqZy-fo6ORnyzgDUMAXilrE-8w72gsgrbQpkYRcA6Hp2JcMXLQRs3O2UKBRPFOsGA6uY4Q.; sso_info=v02m6alo5qztbmel4mpiaeVqZmDtLGNo5S2jZOkuIyDoLc=; lxlrtst=1516344969_o; ALF=1548035204; SR_SEL=1_511; FINA_V_S_2=sh601398; U_TRS2=000000fa.895b5640.5a59c334.eee58955; SessionID=ud36qpcpnth3fpri6unr3ll5v4; Apache=124.65.167.170_1516089897.50860; SINABLOGNUINFO=1656598087.62bdae47.; FINANCE2=4b901bbbe6e92c4c95c69a829cff8202; SUB=_2A253Z4FUDeRhGedI7lQU-SbMwzuIHXVUFPWcrDV_PUNbm9BeLVXxkW9NVw3Cp13HSLLJ83m1Cd8NUpVuHimjLFWw; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9W50qwcm8Y6CVYTf4lhTVKKq5NHD95QpSo-cSK.RehnNWs4Dqcj.i--Ri-2NiKnEi--4iKnNiKyhi--Ri-2piKyhi--Xi-iWiK.p; SINA_FINANCE="%"3A1656598087"%"3A4; visited_funds=110022" -H "Connection: keep-alive"
+    
+    GET /fundInfo/api/openapi.php/CaihuiFundInfoService.getNav?callback=jQuery111209628805851685189_1516499229227&symbol=110022&datefrom=2018-01-01&dateto=2018-01-15&page=1&_=1516499229247 HTTP/1.1
+Host: stock.finance.sina.com.cn
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://finance.sina.com.cn/fund/quotes/110022/bc.shtml
+Cookie: SINAGLOBAL=58.135.84.66_1507522067.304496; UOR=www.baidu.com,tech.sina.com.cn,; ULV=1516089901709:5:2:2:124.65.167.170_1516089897.50860:1516089895053; SGUID=1511484238993_419938; U_TRS1=00000069.3a3f32cd.5a176b53.73539e04; lxlrttp=1516344969; vjuids=-36cb39e17.1607bc9704e.0.ea351ef99c34e; vjlast=1513905287; FIN_ALL_VISITED=sh601398%2C00755; SCF=Ajn03tGwFARNcXYE9AqZy-fo6ORnyzgDUMAXilrE-8w72gsgrbQpkYRcA6Hp2JcMXLQRs3O2UKBRPFOsGA6uY4Q.; sso_info=v02m6alo5qztbmel4mpiaeVqZmDtLGNo5S2jZOkuIyDoLc=; lxlrtst=1516344969_o; ALF=1548035204; SR_SEL=1_511; FINA_V_S_2=sh601398; U_TRS2=000000fa.895b5640.5a59c334.eee58955; SessionID=ud36qpcpnth3fpri6unr3ll5v4; Apache=124.65.167.170_1516089897.50860; SINABLOGNUINFO=1656598087.62bdae47.; FINANCE2=4b901bbbe6e92c4c95c69a829cff8202; SUB=_2A253Z4FUDeRhGedI7lQU-SbMwzuIHXVUFPWcrDV_PUNbm9BeLVXxkW9NVw3Cp13HSLLJ83m1Cd8NUpVuHimjLFWw; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9W50qwcm8Y6CVYTf4lhTVKKq5NHD95QpSo-cSK.RehnNWs4Dqcj.i--Ri-2NiKnEi--4iKnNiKyhi--Ri-2piKyhi--Xi-iWiK.p; SINA_FINANCE=%3A1656598087%3A4; visited_funds=110022
+Connection: keep-alive
+
+/*<script>location.href='//sina.com';</script>*/
+jQuery111209628805851685189_1516499229227({"result":{"status":{"code":0},"data":{"data":[{"fbrq":"2018-01-15 00:00:00","jjjz":"2.536","ljjz":"2.536"},{"fbrq":"2018-01-12 00:00:00","jjjz":"2.527","ljjz":"2.527"},{"fbrq":"2018-01-11 00:00:00","jjjz":"2.485","ljjz":"2.485"},{"fbrq":"2018-01-10 00:00:00","jjjz":"2.505","ljjz":"2.505"},{"fbrq":"2018-01-09 00:00:00","jjjz":"2.47","ljjz":"2.47"},{"fbrq":"2018-01-08 00:00:00","jjjz":"2.411","ljjz":"2.411"},{"fbrq":"2018-01-05 00:00:00","jjjz":"2.39","ljjz":"2.39"},{"fbrq":"2018-01-04 00:00:00","jjjz":"2.385","ljjz":"2.385"},{"fbrq":"2018-01-03 00:00:00","jjjz":"2.347","ljjz":"2.347"},{"fbrq":"2018-01-02 00:00:00","jjjz":"2.342","ljjz":"2.342"}],"total_num":"10"}}})
