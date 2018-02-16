@@ -43,7 +43,7 @@ if __name__ == "__main__":
                 else:
                     continue
 
-                formData = XueqiuUtils.formData
+                formData = XueqiuUtils.xq_formData
                 transfertime = row[2]
                 transfertime = datetime.strptime(transfertime, '%Y/%m/%d %H:%M').strftime('%Y-%m-%d')
                 # print(row[8])
@@ -78,14 +78,14 @@ if __name__ == "__main__":
                 formData['data[shares]'] = shares
 
                 #
-                formData['data[comment]'] = 'Python Import'
+                formData['data[comment]'] = 'AutoImport'
 
                 print(formData)
 
                 request = requests.post('https://xueqiu.com/service/poster',
                                         data=formData,
-                                        headers=XueqiuUtils.headerData,
-                                        cookies=XueqiuUtils.cookieData)
+                                        headers=XueqiuUtils.xq_headerData,
+                                        cookies=XueqiuUtils.xq_cookieData)
 
                 if(request.status_code != 200):
                     print("ERROR！"+". Request return code:"+request.status_code)

@@ -13,17 +13,17 @@ from urllib import parse, request
 from datetime import datetime
 
 
-sui_jsessionid = '9AA43A46A085C64B21E2C61696C64F43'
+sui_jsessionid = 'E1E70235FEC6936E6CF49154ADB10A06'
 sui_sessionCookie = '14ef1450ea7d6f4f82ef548c622dde6d'
-filename = "C:\downloads\\alipay_record_20180127_1922\\alipay_record_20180127_1922_1.csv"
+filename = "C:\downloads\\alipay_record_20180212.csv"
 
-cookieData = {
-    'xq_a_token': 'e39d420f30c251f6778a2f394341cf89fa77b392',
-    'xq_a_token.sig': 'wCFLnsMbz-uU5s9grLNI9KSZ-QI',
+xq_cookieData = {
+    'xq_a_token': 'fb6cd9f7d7c6acf465bd7fbf9473f22b017f85ec',
+    'xq_a_token.sig': '9LOdjcMHnklm6QMYT-i40ii1_3U',
     'xq_is_login': '1',
     'xq_is_login.sig': 'J3LxgPVPUzbBg3Kee_PquUfih7Q',
-    'xq_r_token': '1adc1236349428753242dc24173b2451b265b3d4',
-    'xq_r_token.sig': 'lmBuAzU4LnsSe128lC4ergOK9Ug',
+    'xq_r_token': '4ef6609a768c01bb5777aaa3ad476dd727bd63da',
+    'xq_r_token.sig': '0tHLMEkxnpd5CjJ4PILuzy9iyBw',
 }
 
 fundList = {
@@ -42,7 +42,7 @@ fundList = {
     '交银施罗德中证海外中国互联网指数(QDII': ['SZ164906', 0.0012],
 }
 
-headerData = {
+xq_headerData = {
     'Host': 'xueqiu.com',
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
     'Accept': '*/*',
@@ -54,7 +54,7 @@ headerData = {
 }
 
 
-formData = {
+xq_formData = {
     'url': '/stock/portfolio/addtrans.json',
     'data[type]': '1',
     'data[date]': '2018-01-20',  # Dynamic
@@ -77,7 +77,7 @@ def getprice(fundcode, transdate):
     xqPriceUrl = xqPriceUrl.replace('FUNDCODE',fundcode)
     print(xqPriceUrl)
     #get the date of next Thursday
-    request = requests.get(xqPriceUrl, headers=headerData, cookies=cookieData)
+    request = requests.get(xqPriceUrl, headers=xq_headerData, cookies=xq_cookieData)
     print('request.text:', request.text)
     return fundcode+transdate;
 
