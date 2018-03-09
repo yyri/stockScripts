@@ -13,10 +13,11 @@ from urllib import parse, request
 from datetime import datetime
 
 
-sui_jsessionid = 'E1E70235FEC6936E6CF49154ADB10A06'
+sui_jsessionid = '32BD37F3EBDBF4474E798BCB91925AF6' # always change everytime
 sui_sessionCookie = '14ef1450ea7d6f4f82ef548c622dde6d'
-filename = "C:\downloads\\alipay_record_20180212.csv"
+filename = "C:\downloads\\alipay_record_20180308.csv"
 
+processTopNRecords = 15  # 5 Useless Rows included.
 xq_cookieData = {
     'xq_a_token': 'fb6cd9f7d7c6acf465bd7fbf9473f22b017f85ec',
     'xq_a_token.sig': '9LOdjcMHnklm6QMYT-i40ii1_3U',
@@ -92,10 +93,13 @@ def getpriceFromSina(fundcode, transdate):
     print('request.text:', request.text)
 
     jjjzjson = json.loads(request.text)
-    jjjz =jjjzjson["result"]['data']['data'][0]['jjjz']
-    print(jjjz)
-    return float(jjjz);
-
+    if(len(jjjzjson["result"]['data']['data'])>0):
+        jjjz =jjjzjson["result"]['data']['data'][0]['jjjz']
+        print(jjjz)
+        return float(jjjz);
+    else:
+        print("Error! No Data Return.")
+        return 9999;
 
 
 

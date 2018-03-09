@@ -133,7 +133,81 @@ Connection: keep-alive
 
 
 
+GET /performance HTTP/1.1
+Host: xueqiu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate, br
+Cookie: Hm_lvt_1db88642e346389874251b5a1eded6e3=1519693192,1520496769; device_id=0f130389a94383e2368d5d55e43adf3d; s=fd11clw10r; bid=7d61d477a90d923192ee705a2d8777db_jbh841ja; __utma=1.1924959979.1513905273.1520567262.1520603189.116; __utmz=1.1520496770.113.2.utmcsr=baidu|utmccn=(organic)|utmcmd=organic|utmctr=%E6%95%B0%E5%BA%93%E7%A7%91%E6%8A%80; xq_a_token=fb6cd9f7d7c6acf465bd7fbf9473f22b017f85ec; xq_r_token=4ef6609a768c01bb5777aaa3ad476dd727bd63da; u=7309855904; remember=1; remember.sig=K4F3faYzmVuqC0iXIERCQf55g2Y; xq_a_token.sig=9LOdjcMHnklm6QMYT-i40ii1_3U; xq_r_token.sig=0tHLMEkxnpd5CjJ4PILuzy9iyBw; xq_is_login=1; xq_is_login.sig=J3LxgPVPUzbBg3Kee_PquUfih7Q; u.sig=Xh0hW3oFsp-9FsZnngYrdcQFc8Y; aliyungf_tc=AQAAAAvD2F5SMQEAp10pZeueF97JA+3b; __utmc=1; Hm_lpvt_1db88642e346389874251b5a1eded6e3=1520496769; __utmb=1.2.10.1520603189; __utmt=1
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
 
+
+
+
+
+
+
+curl "https://xueqiu.com/service/poster" -H "Host: xueqiu.com" -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0" -H "Accept: */*" -H "Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2" --compressed -H "Referer: https://xueqiu.com/performance" -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8" -H "cache-control: no-cache" -H "X-Requested-With: XMLHttpRequest" -H "Cookie: Hm_lvt_1db88642e346389874251b5a1eded6e3=1519693192,1520496769; device_id=0f130389a94383e2368d5d55e43adf3d; s=fd11clw10r; bid=7d61d477a90d923192ee705a2d8777db_jbh841ja; __utma=1.1924959979.1513905273.1520567262.1520603189.116; __utmz=1.1520496770.113.2.utmcsr=baidu|utmccn=(organic)|utmcmd=organic|utmctr="%"E6"%"95"%"B0"%"E5"%"BA"%"93"%"E7"%"A7"%"91"%"E6"%"8A"%"80; xq_a_token=fb6cd9f7d7c6acf465bd7fbf9473f22b017f85ec; xq_r_token=4ef6609a768c01bb5777aaa3ad476dd727bd63da; u=7309855904; remember=1; remember.sig=K4F3faYzmVuqC0iXIERCQf55g2Y; xq_a_token.sig=9LOdjcMHnklm6QMYT-i40ii1_3U; xq_r_token.sig=0tHLMEkxnpd5CjJ4PILuzy9iyBw; xq_is_login=1; xq_is_login.sig=J3LxgPVPUzbBg3Kee_PquUfih7Q; u.sig=Xh0hW3oFsp-9FsZnngYrdcQFc8Y; aliyungf_tc=AQAAAAvD2F5SMQEAp10pZeueF97JA+3b; __utmc=1; Hm_lpvt_1db88642e346389874251b5a1eded6e3=1520496769; __utmb=1.3.10.1520603189" -H "Connection: keep-alive" --data "url="%"2Fstock"%"2Fcommissiontax"%"2Fadd.json&data"%"5Bop_type"%"5D=1&data"%"5Bcommission"%"5D=0.05&data"%"5Btax_rate"%"5D=0&data"%"5B_"%"5D=1520603789221"
+
+
+url=/stock/commissiontax/add.json
+data[op_type]=1
+data[commission]=0.05
+data[tax_rate]=0
+data[_]=1520603789221
+
+
+
+
+POST /service/poster HTTP/1.1
+Host: xueqiu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate, br
+Referer: https://xueqiu.com/performance
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+cache-control: no-cache
+X-Requested-With: XMLHttpRequest
+Content-Length: 267
+Cookie: Hm_lvt_1db88642e346389874251b5a1eded6e3=1519693192,1520496769; device_id=0f130389a94383e2368d5d55e43adf3d; s=fd11clw10r; bid=7d61d477a90d923192ee705a2d8777db_jbh841ja; __utma=1.1924959979.1513905273.1520567262.1520603189.116; __utmz=1.1520496770.113.2.utmcsr=baidu|utmccn=(organic)|utmcmd=organic|utmctr=%E6%95%B0%E5%BA%93%E7%A7%91%E6%8A%80; xq_a_token=fb6cd9f7d7c6acf465bd7fbf9473f22b017f85ec; xq_r_token=4ef6609a768c01bb5777aaa3ad476dd727bd63da; u=7309855904; remember=1; remember.sig=K4F3faYzmVuqC0iXIERCQf55g2Y; xq_a_token.sig=9LOdjcMHnklm6QMYT-i40ii1_3U; xq_r_token.sig=0tHLMEkxnpd5CjJ4PILuzy9iyBw; xq_is_login=1; xq_is_login.sig=J3LxgPVPUzbBg3Kee_PquUfih7Q; u.sig=Xh0hW3oFsp-9FsZnngYrdcQFc8Y; aliyungf_tc=AQAAAAvD2F5SMQEAp10pZeueF97JA+3b; __utmc=1; Hm_lpvt_1db88642e346389874251b5a1eded6e3=1520496769; __utmb=1.3.10.1520603189
+Connection: keep-alive
+
+
+
+url=/stock/portfolio/addtrans.json
+data[type]=1
+data[date]=2018-03-08
+data[comment]
+data[symbol]=F110022
+data[groupId]=3147879
+data[price]=1.123
+data[shares]=123
+data[commission]=0.05
+data[taxRate]
+data[_]=1520603789218
+
+{'url': '/stock/portfolio/addtrans.json', 'data[type]': '1', 'data[date]': '2018.03.08', 'data[comment]': 'AutoImport', 'data[symbol]': 'F001008', 'data[groupId]': '3147879', 'data[price]': 1.151, 'data[shares]': 156.15, 'data[commission]': 0.27, 'data[taxRate]': '', 'data[_]': '1516457868626'}
+Return Code: 200
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[{"date":1519833600000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2018-03-01","tax":0.0,"type":1,"tid":2382467605594234,"createAt":1520327835126,"shares":114.52,"taxRate":0.0,"price":2.354,"comment":"AutoImport","commission":0.4},{"date":1519228800000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2018-02-22","tax":0.0,"type":1,"tid":2367620088220004,"createAt":1519442854046,"shares":111.03,"taxRate":0.0,"price":2.428,"comment":"AutoImport","commission":0.4},{"date":1518364800000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2018-02-12","tax":0.0,"type":1,"tid":2357213785290019,"createAt":1518822590431,"shares":431.87,"taxRate":0.0,"price":2.312,"comment":"AutoImport","commission":1.5},{"date":1518019200000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2018-02-08","tax":0.0,"type":1,"tid":2348710655992567,"createAt":1518315764342,"shares":117.83,"taxRate":0.0,"price":2.288,"comment":"AutoImport","commission":0.4},{"date":1518019200000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2018-02-08","tax":0.0,"type":1,"tid":2348709951349489,"createAt":1518315722224,"shares":436.4,"taxRate":0.0,"price":2.288,"comment":"AutoImport","commission":1.5},{"date":1517932800000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2018-02-07","tax":0.0,"type":1,"tid":2348705756951484,"createAt":1518315472308,"shares":440.83,"taxRate":0.0,"price":2.265,"comment":"AutoImport","commission":1.5},{"date":1517414400000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2018-02-01","tax":0.0,"type":1,"tid":2337667909212952,"createAt":1517657565664,"shares":109.54,"taxRate":0.0,"price":2.461,"comment":"Python Import","commission":0.4},{"date":1516809600000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2018-01-25","tax":0.0,"type":1,"tid":2327525914120510,"createAt":1517053055442,"shares":94.86,"taxRate":0.0,"price":2.526,"comment":"Python Import","commission":0.36},{"date":1516204800000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2018-01-18","tax":0.0,"type":1,"tid":2315556729554038,"createAt":1516339636431,"shares":108.4,"taxRate":0.0,"price":2.487,"comment":"","commission":0.4},{"date":1515600000000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2018-01-11","tax":0.0,"type":1,"tid":2305308887198777,"createAt":1515728817726,"shares":108.49,"taxRate":0.0,"price":2.485,"comment":"","commission":0.4},{"date":1514995200000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2018-01-04","tax":0.0,"type":1,"tid":2295145300036670,"createAt":1515123020555,"shares":113.04,"taxRate":0.0,"price":2.385,"comment":"","commission":0.4},{"date":1514390400000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2017-12-28","tax":0.0,"type":1,"tid":2285182855072349,"createAt":1514529212782,"shares":115.51,"taxRate":0.0,"price":2.334,"comment":"","commission":0.4},{"date":1514304000000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2017-12-27","tax":0.0,"type":1,"tid":2281983943415139,"createAt":1514338542700,"shares":33.24,"taxRate":0.0,"price":2.326,"comment":"","commission":0.0},{"date":1513785600000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2017-12-21","tax":0.0,"type":1,"tid":2274985713415656,"createAt":1513921415430,"shares":114.43,"taxRate":0.0,"price":2.356,"comment":"","commission":0.4},{"date":1513180800000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2017-12-14","tax":0.0,"type":1,"tid":2264819173556695,"createAt":1513315442245,"shares":118.19,"taxRate":0.0,"price":2.281,"comment":"","commission":0.4},{"date":1512576000000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2017-12-07","tax":0.0,"type":1,"tid":2254804702406165,"createAt":1512718533095,"shares":126.57,"taxRate":0.0,"price":2.13,"comment":"","commission":0.4},{"date":1511971200000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2017-11-30","tax":0.0,"type":1,"tid":2244413515601419,"createAt":1512099170926,"shares":126.1,"taxRate":0.0,"price":2.138,"comment":"","commission":0.4},{"date":1511452800000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2017-11-24","tax":0.0,"type":1,"tid":2238647756747552,"createAt":1511755504672,"shares":674.36,"taxRate":0.0,"price":2.221,"comment":"","commission":2.25},{"date":1511366400000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2017-11-23","tax":0.0,"type":1,"tid":2234525846501567,"createAt":1511509819105,"shares":107.99,"taxRate":0.0,"price":2.219,"comment":"","commission":0.36},{"date":1510761600000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2017-11-16","tax":0.0,"type":1,"tid":2224270605600488,"createAt":1510898559155,"shares":116.46,"taxRate":0.0,"price":2.315,"comment":"","commission":0.4},{"date":1510156800000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2017-11-09","tax":0.0,"type":1,"tid":2214354297806229,"createAt":1510307501968,"shares":119.61,"taxRate":0.0,"price":2.254,"comment":"","commission":0.4},{"date":1509552000000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2017-11-02","tax":0.0,"type":1,"tid":2204024649855830,"createAt":1509691806103,"shares":122.88,"taxRate":0.0,"price":2.194,"comment":"","commission":0.4},{"date":1508947200000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2017-10-26","tax":0.0,"type":1,"tid":2193537681665667,"createAt":1509066734818,"shares":124.13,"taxRate":0.0,"price":2.172,"comment":"","commission":0.4},{"date":1508342400000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2017-10-19","tax":0.0,"type":1,"tid":2183621072169049,"createAt":1508475658109,"shares":126.1,"taxRate":0.0,"price":2.138,"comment":"","commission":0.4},{"date":1507737600000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2017-10-12","tax":0.0,"type":1,"tid":2173508303018363,"createAt":1507872890451,"shares":128.75,"taxRate":0.0,"price":2.094,"comment":"","commission":0.4},{"date":1507478400000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2017-10-09","tax":0.0,"type":1,"tid":2168888612762725,"createAt":1507597535801,"shares":132.03,"taxRate":0.0,"price":2.042,"comment":"","commission":0.4},{"date":1506528000000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2017-09-28","tax":0.0,"type":1,"tid":2153477078994760,"createAt":1506678936416,"shares":135.41,"taxRate":0.0,"price":1.991,"comment":"","commission":0.4},{"date":1505923200000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2017-09-21","tax":0.0,"type":1,"tid":2143048932008877,"createAt":1506057370520,"shares":137.41,"taxRate":0.0,"price":1.962,"comment":"","commission":0.4},{"date":1505318400000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2017-09-14","tax":0.0,"type":1,"tid":2132807817323507,"createAt":1505446952006,"shares":139.83,"taxRate":0.0,"price":1.928,"comment":"","commission":0.4},{"date":1504713600000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2017-09-07","tax":0.0,"type":1,"tid":2122515381234315,"createAt":1504833475274,"shares":141.75,"taxRate":0.0,"price":1.902,"comment":"","commission":0.4},{"date":1504108800000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2017-08-31","tax":0.0,"type":1,"tid":2113135021617497,"createAt":1504274362122,"shares":139.04,"taxRate":0.0,"price":1.939,"comment":"","commission":0.4},{"date":1503504000000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2017-08-24","tax":0.0,"type":1,"tid":2111147827483959,"createAt":1504155916498,"shares":140.78,"taxRate":0.0,"price":1.915,"comment":"","commission":0.4},{"date":1502899200000,"symbol":"F110022","commissionRate":1.5,"dateStr":"2017-08-17","tax":0.0,"type":1,"tid":2092783755145844,"createAt":1503061332706,"shares":141.67,"taxRate":0.0,"price":1.903,"comment":"","commission":0.0},{"date":1502294400000,"symbol":"F110022","commissionRate":1.5,"dateStr":"2017-08-10","tax":0.0,"type":1,"tid":2082292374817131,"createAt":1502435997082,"shares":139.76,"taxRate":0.0,"price":1.929,"comment":"","commission":0.0},{"date":1501689600000,"symbol":"F110022","commissionRate":1.5,"dateStr":"2017-08-03","tax":0.0,"type":1,"tid":2071928350456302,"createAt":1501818253566,"shares":144.56,"taxRate":0.0,"price":1.865,"comment":"","commission":0.0},{"date":1501084800000,"symbol":"F110022","commissionRate":1.5,"dateStr":"2017-07-27","tax":0.0,"type":1,"tid":2061626602884146,"createAt":1501204221912,"shares":144.02,"taxRate":0.0,"price":1.872,"comment":"","commission":0.0},{"date":1500480000000,"symbol":"F110022","commissionRate":1.5,"dateStr":"2017-07-20","tax":0.0,"type":1,"tid":2051477125435741,"createAt":1500599265697,"shares":142.27,"taxRate":0.0,"price":1.895,"comment":"","commission":0.0},{"date":1499875200000,"symbol":"F110022","commissionRate":1.5,"dateStr":"2017-07-13","tax":0.0,"type":1,"tid":2041337882081295,"createAt":1499994919783,"shares":144.56,"taxRate":0.0,"price":1.865,"comment":"","commission":0.0},{"date":1499270400000,"symbol":"F110022","commissionRate":1.5,"dateStr":"2017-07-06","tax":0.0,"type":1,"tid":2031179965716358,"createAt":1499389460239,"shares":143.33,"taxRate":0.0,"price":1.881,"comment":"","commission":0.0},{"date":1498579200000,"symbol":"F110022","commissionRate":1.5,"dateStr":"2017-06-28","tax":0.0,"type":1,"tid":2021044933249506,"createAt":1498785365064,"shares":142.34,"taxRate":0.0,"price":1.894,"comment":"","commission":0.0},{"date":1498060800000,"symbol":"F110022","commissionRate":1.5,"dateStr":"2017-06-22","tax":0.0,"type":1,"tid":2010886379324966,"createAt":1498179868114,"shares":120.01,"taxRate":0.0,"price":1.872,"comment":"","commission":0.0},{"date":1497456000000,"symbol":"F110022","commissionRate":1.5,"dateStr":"2017-06-15","tax":0.0,"type":1,"tid":2000740122967765,"createAt":1497575104243,"shares":122.5,"taxRate":0.0,"price":1.834,"comment":"","commission":0.0},{"date":1496851200000,"symbol":"F110022","commissionRate":1.5,"dateStr":"2017-06-08","tax":0.0,"type":1,"tid":1990598900005876,"createAt":1496970640606,"shares":122.43,"taxRate":0.0,"price":1.835,"comment":"","commission":0.0},{"date":1496246400000,"symbol":"F110022","commissionRate":1.5,"dateStr":"2017-06-01","tax":0.0,"type":1,"tid":1980445412690425,"createAt":1496365445268,"shares":76.68,"taxRate":0.0,"price":1.758,"comment":"","commission":0.0},{"date":1495641600000,"symbol":"F110022","commissionRate":1.5,"dateStr":"2017-05-25","tax":0.0,"type":1,"tid":1970297998875826,"createAt":1495760612350,"shares":77.43,"taxRate":0.0,"price":1.741,"comment":"","commission":0.0},{"date":1495036800000,"symbol":"F110022","commissionRate":1.5,"dateStr":"2017-05-18","tax":0.0,"type":1,"tid":1960151910423335,"createAt":1495155858881,"shares":135.0,"taxRate":0.0,"price":1.709,"comment":"","commission":0.0},{"date":1494432000000,"symbol":"F110022","commissionRate":1.5,"dateStr":"2017-05-11","tax":0.0,"type":1,"tid":1950006056691054,"createAt":1494551118361,"shares":79.86,"taxRate":0.0,"price":1.688,"comment":"","commission":0.0},{"date":1494172800000,"symbol":"F110022","commissionRate":0.0,"dateStr":"2017-05-08","tax":0.0,"type":1,"tid":1945681343371614,"createAt":1494293345975,"shares":12309.35,"taxRate":0.0,"price":1.661,"comment":"","commission":0.0}]
 
 
 

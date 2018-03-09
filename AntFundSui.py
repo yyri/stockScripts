@@ -22,24 +22,30 @@ print("Python3 is expected.Current Version is:" + sys.version)
 # https://consumeprod.alipay.com/record/standard.htm  高级筛选，搜索“蚂蚁财富”
 with open(XueqiuUtils.filename) as csv_file:
     rows = csv.reader(csv_file)
-    count = 11
+    rownumber = 1
     for row in rows:
         # print(row)
-        count -= 1
         # print(count)
-        if (count < 0):
+        # to read 15 lines in which the first 4 lines are useless and the 5th line is title.
+        if (rownumber >XueqiuUtils.processTopNRecords):
             exit()
 
+        rownumber += 1
+        fundName = ''
         if row != "":  # add other needed checks to skip titles
             # cols = row.split("','")
-            if (len(row[8].split("-")) > 1):
-                print(row[8].split("-")[1])
+            # print(len(row))
+            if (len(row) < 8):
+                continue
+            elif (len(row[8].split("-")) > 1):
+                fundName = row[8].split("-")[1]
+                #print(fundName)
             else:
                 continue
-            transfertime = row[2]
-            transfertime = datetime.strptime(transfertime, '%Y/%m/%d %H:%M').strftime('%Y.%m.%d') + ' 23:59'
+            transfertime = row[2].strip()
+            transfertime = datetime.strptime(transfertime, '%Y-%m-%d %H:%M:%S').strftime('%Y.%m.%d') + ' 23:'+str(59-rownumber)
             # print(row[8])
-            print(row[9])
+            print("Processing Row #"+str(rownumber)+": "+fundName)
 
             postdata = {
                 'id': '0',
@@ -50,8 +56,8 @@ with open(XueqiuUtils.filename) as csv_file:
                 'in_account': '32546913',
                 'account': '0',
                 'time': transfertime,
-                'memo': row[8].split("-")[1],
-                'price': row[9],
+                'memo': row[8].strip().split("-")[1],
+                'price': row[9].strip(),
                 'debt_account': '',
                 'price2': ''
             }
