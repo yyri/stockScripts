@@ -25,6 +25,7 @@ if __name__ == "__main__":
     with open(XueqiuUtils.filename) as csv_file:
         rows = csv.reader(csv_file)
         rownumber = 0
+        XueqiuUtils.parseXueqiuCookie()
         for row in rows:
             # print(row)
             # to read 15 lines in which the first 4 lines are useless and the 5th line is title.
@@ -47,6 +48,7 @@ if __name__ == "__main__":
 
                 formData = XueqiuUtils.xq_formData
                 transfertime = row[2].strip()
+                # DO NOT "SAVE" the csv file in excel which will reformat the datetime fields.
                 transfertime = datetime.strptime(transfertime, '%Y-%m-%d %H:%M:%S').strftime('%Y-%m-%d')
                 # print(row[8])
                 print("Processing Row #" + str(rownumber) + ": " + fundName)
@@ -91,7 +93,7 @@ if __name__ == "__main__":
                                         cookies=XueqiuUtils.xq_cookieData)
 
                 if(request.status_code != 200):
-                    print("ERROR！"+". Request return code:"+request.status_code)
+                    print("ERROR！"+". Request return code:"+str(request.status_code))
                     exit(1)
                 else:
                     print('Return Code:',request.status_code)
