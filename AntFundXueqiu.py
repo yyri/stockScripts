@@ -22,33 +22,38 @@ if __name__ == "__main__":
     print('Python3 is expected.\nCurrent Version is:' + sys.version)
     errorLines = 0
 
-    with open("C:/downloads/alipay_record_20180120_0750/alipay_record_20180120_0750_1.csv") as csv_file:
+    with open(XueqiuUtils.filename) as csv_file:
         rows = csv.reader(csv_file)
-        count = 11
+        rownumber = 0
+        XueqiuUtils.parseXueqiuCookie()
         for row in rows:
             # print(row)
-            count -= 1
-            # print(count)
-            if (count < 0):
+            # to read 15 lines in which the first 4 lines are useless and the 5th line is title.
+            if (rownumber >= XueqiuUtils.processTopNRecords):
                 exit()
 
+            rownumber += 1
             fundName = ''
             sumMoney = 0
 
             if row != "":  # add other needed checks to skip titles
                 # cols = row.split("','")
-                if (len(row[8].split("-")) > 1):
+                if (len(row) < 8):
+                    continue
+                elif (len(row[8].split("-")) > 1):
                     fundName =row[8].split("-")[1]
                     print(fundName)
                 else:
                     continue
 
-                formData = XueqiuUtils.formData
-                transfertime = row[2]
-                transfertime = datetime.strptime(transfertime, '%Y/%m/%d %H:%M').strftime('%Y-%m-%d')
+                formData = XueqiuUtils.xq_formData
+                transfertime = row[2].strip()
+                # DO NOT "SAVE" the csv file in excel which will reformat the datetime fields.
+                transfertime = datetime.strptime(transfertime, '%Y-%m-%d %H:%M:%S').strftime('%Y-%m-%d')
                 # print(row[8])
+                print("Processing Row #" + str(rownumber) + ": " + fundName)
 
-                sumMoney = row[9]
+                sumMoney = row[9].strip()
                 print('sumMoney:'+sumMoney)
 
                 if fundName in XueqiuUtils.fundList:
@@ -65,7 +70,7 @@ if __name__ == "__main__":
                 formData['data[symbol]'] = XueqiuUtils.fundList[fundName][0]
 
                 # trans cost
-                commission = int(sumMoney) * XueqiuUtils.fundList[fundName][1]
+                commission = floor(float(sumMoney) * XueqiuUtils.fundList[fundName][1]*100)/100
                 formData['data[commission]'] = commission
 
                 # fund price on trans date
@@ -73,22 +78,23 @@ if __name__ == "__main__":
                 formData['data[price]'] = jjjz
 
                 # trans shares
-                shares = (int(sumMoney) - commission)/ jjjz
+                shares = (float(sumMoney) - commission)/ jjjz
                 shares = floor(shares*100)/100
                 formData['data[shares]'] = shares
 
                 #
-                formData['data[comment]'] = 'Python Import'
+                formData['data[comment]'] = 'AutoImport'
 
                 print(formData)
 
                 request = requests.post('https://xueqiu.com/service/poster',
                                         data=formData,
-                                        headers=XueqiuUtils.headerData,
-                                        cookies=XueqiuUtils.cookieData)
+                                        headers=XueqiuUtils.xq_headerData,
+                                        cookies=XueqiuUtils.xq_cookieData)
 
                 if(request.status_code != 200):
-                    print("ERROR！"+". Request return code:"+request.status_code)
+                    print("ERROR！"+". Request return code:"+str(request.status_code))
                     exit(1)
                 else:
-                    print('request.text:', request.text)
+                    print('Return Code:',request.status_code)
+                    print('request.result:', request.text)
